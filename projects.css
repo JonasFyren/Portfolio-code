@@ -1,0 +1,190 @@
+/* fonts
+
+font-family: 'Kanit', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/
+
+main {
+    min-height: 100vh;
+}
+
+/* Project boxes */
+
+.content1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.content2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.projectbox {
+    width: 30%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.projectbox:first-child {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.projectbox:last-child {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.projectbox > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projectbox > p {
+    color: #FFF;
+    font-size: 20px;
+    }
+
+.titlebox {
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.titlebox > h2 {
+    color: #FFF;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.infobox {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Overlay and popup */
+
+.button {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.button:hover {
+    color: #FA4E48;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+    background: #fff;
+    border-radius: 5px;
+    margin: 70px auto;
+    padding: 20px;
+    transition: all 5s ease-in-out;
+}
+  
+.popup > h2 {
+    margin: 0;
+    color: #726A75;
+    font-family: 'Kanit', sans-serif;
+}
+
+.popup > .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 0.2s;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #726A75;
+  }
+
+.popup > .close:hover {
+    color: #FA4E48;
+}
+
+.popcontent {
+    border-top: 2px solid #FA4E48;
+    padding-top: 10px;
+}
+
+.popcontent > p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav > a:nth-child(3) {
+    background-color: #FA4E48;
+    color: #FFF;
+    cursor: default;
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+    
+    .content1 {
+        display: block;
+    }
+
+    .content2 {
+        display: block;
+    }
+
+    .projectbox {
+        width: 100%;
+    }
+
+    .projectbox:first-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .projectbox:nth-child(2) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .projectbox:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .popup {
+        width: 100%;
+    }
+
+}

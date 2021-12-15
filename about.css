@@ -1,0 +1,78 @@
+/* fonts
+
+font-family: 'Kanit', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Content boxes */
+
+.content1 {
+    width: 80%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 15px;
+}
+
+.aboutbox {
+    width: 66%;
+    padding: 15px;
+}
+
+.aboutbox > p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.content1 > img {
+    width: 33%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.titlebox {
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav > a:nth-child(2) {
+    background-color: #FA4E48;
+    color: #FFF;
+    cursor: default;
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+    
+    .content1 {
+        display: block;
+        height: auto;
+    }
+
+    .content1 > img {
+        width: 100%;
+    }
+
+    .aboutbox {
+        width: auto;
+    }
+
+}

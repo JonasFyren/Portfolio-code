@@ -1,0 +1,146 @@
+/* fonts
+
+font-family: 'Kanit', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact boxes */
+
+.content1 {
+    width: 80%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.content1 > div {
+    width: 50%;
+    height: auto;
+}
+
+.titlebox {
+    border-bottom: 2px solid #FFF;
+}
+
+.titlebox > h2 {
+    color: #FFF;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+}
+
+.textbox {
+    height: 90%;
+    border-right: 2px solid #FFF;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.textbox > p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.contactbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.contactbox > img {
+    width: 64px;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.contactbox > p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+/* Forms */
+
+.formbox {
+    padding: 20px;
+}
+
+input {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+textarea {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.button:hover {
+    background-color: #FA4E48;
+    color: #FFF;
+}
+
+nav > a:last-child {
+    background-color: #FA4E48;
+    color: #FFF;
+    cursor: default;
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+    .content1 {
+        display: block;
+        height: auto;
+    }
+
+    .content1 > div {
+        width: auto;
+    }
+
+    .content1 > div:first-child {
+        border-right: none;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .textbox {
+        border-right: none;
+    }
+
+}

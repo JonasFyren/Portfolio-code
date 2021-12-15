@@ -1,0 +1,195 @@
+/* fonts
+
+font-family: 'Kanit', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/
+
+main {
+    min-height: 100vh;
+}
+
+.content1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+/* Slideshow */
+
+.slideshow {
+    overflow: hidden;
+    height: 500px;
+    width: 75%;
+    border-radius: 50px/100px;
+    border: 2px solid #FA4E48;
+}
+
+.slide {
+    height: 500px;
+    width: 100%;
+}
+
+.slide-wrapper {
+    width: calc(100% * 4);
+    animation: slide 20s ease infinite;
+    display: flex;
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../images/banner1.PNG");
+}
+   
+.slide:nth-child(2) {
+    background-image: url("../images/banner.PNG");
+}
+   
+.slide:nth-child(3) {
+    background-image: url("../images/banner3.PNG");
+}
+   
+.slide:nth-child(4) {
+    background-image: url("../images/banner4.PNG");
+}
+
+@keyframes slide {
+
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-100% * 1);
+    }
+   
+    60% {
+      margin-left: calc(-100% * 2);
+    }
+   
+    80% {
+      margin-left: calc(-100% * 3);
+    }
+}
+
+/* Content boxes */
+
+.content2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.content2 > div {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.titlebox {
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #FFF;
+    font-family: 'Kanit', sans-serif;
+    margin: 5px 0;
+}
+
+.projectbox {
+    height: fit-content;
+}
+
+.examplebox {
+    width: 75%;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.examplebox > img {
+    width: 33%;
+    border-radius: 100%;
+    border: 2px solid #FA4E48;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.exampleproject {
+    width: 66%;
+    padding: 5px;
+}
+
+.exampleproject > h3 {
+    margin: 0;
+    border-bottom: 1px solid #FA4E48;
+}
+
+.aboutbox {
+    height: fit-content;
+}
+
+.abouttextbox > p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.morebox {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.morebox > a {
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+    transition: 0,2s ease-in-out;
+}
+
+.morebox > a:hover {
+    color: #FA4E48;
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+    .content2 {
+        display: block;
+    }
+
+    .content2 > div {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .slideshow {
+        width: 90%;
+        height: 300px;
+    }
+
+    .slide {
+        background: round;
+        height: 400px;
+    }
+}
